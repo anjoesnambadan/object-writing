@@ -1,0 +1,84 @@
+body {
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  margin: 0;
+}
+
+#timer {
+  font-size: 60px;
+  text-align: center;
+  user-select: none;
+}
+
+#word {
+  font-size: 60px;
+  text-align: center;
+  margin: 2em auto;
+}
+
+/* Styling for the start button */
+#start-button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 16px 16px 10px 22px;
+  font-size: 2em;
+  margin: 50px auto;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+#start-button:focus {
+  border: none;
+}
+
+#start-button:hover {
+  background: linear-gradient(to right, #ebba91, #e9b386);
+  color: black;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  #timer {
+    font-size: 40px;
+  }
+
+  #word {
+    font-size: 30px;
+  }
+
+  #start-button {
+    font-size: 14px;
+  }
+}
+
+/* CSS for the dark mode toggle button */
+#dark-mode-toggle {
+  padding: 20px;
+  display: inline-block;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* CSS for the dark mode */
+.dark-mode {
+  background: linear-gradient(to right, #181008, #1b0d07);
+  color: rgb(240, 234, 234);
+}
+/* CSS for the light mode */
+.light-mode {
+  background: linear-gradient(to right, #f0dfc1, #f0c19b);
+  color: black;
+}
+
+.dark-mode-btn {
+  color: white;
+}
+.light-mode-btn {
+  color: black;
+}
